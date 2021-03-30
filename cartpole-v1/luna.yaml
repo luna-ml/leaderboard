@@ -10,10 +10,9 @@ evaluator:
   - "bash"
   - "-c"
   - >-
-    pip install gym numpy matplotlib;
     cd /workspace;
-    python eval.py model/agent.py;
-    ls -al eval/
+    pip install -r requirements.txt;
+    python eval.py model/agent.py
 scorer:
   image: python:3.7
   command:
@@ -22,4 +21,4 @@ scorer:
   - >-
     cd /workspace;
     ls -al eval/;
-    cp eval/result.txt score/score.txt;
+    cp eval/result.txt score/score.txt
