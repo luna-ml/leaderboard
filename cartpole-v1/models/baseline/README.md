@@ -7,14 +7,6 @@ Each evaluation, gym environment and random agent uses different random seed. So
 
 ## Evaluate locally for development
 
-Prepare python 3.x environment with following dependencies installed
+conda install x264=='1!152.20180717' ffmpeg=4.0.2 -c conda-forge
 
-```
-pip install gym numpy
-```
-
-And then in the project directory (`/cartpole-v1/`), you can run
-
-```
-eval.py
-```
+apt-get install python-opengl

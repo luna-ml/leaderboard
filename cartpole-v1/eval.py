@@ -5,9 +5,13 @@ from gym.wrappers import Monitor
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 # create gym env
-# env = Monitor(gym.make('CartPole-v1'), "./eval/", video_callable=lambda episode_id: True, force=True)
-env = gym.make('CartPole-v1')
+if "VIDEO_RECORD" in os.environ:
+    os.makedirs("video", exist_ok=True)
+    env = Monitor(gym.make('CartPole-v1'), "./video/", video_callable=lambda episode_id: True, force=True)
+else:
+    env = gym.make('CartPole-v1')
 
 # number of evaluations to average rewards
 num_evaluation = 100

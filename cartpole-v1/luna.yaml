@@ -12,7 +12,8 @@ evaluator:
   - >-
     cd /workspace;
     pip install -r requirements.txt;
-    python eval.py model/agent.py
+    ./setup.sh;
+    VIDEO_RECORD=true xvfb-run -s "-screen 0 640x480x24" python eval.py model/agent.py && ./concat_video.sh
 scorer:
   image: python:3.7
   command:
