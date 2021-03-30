@@ -10,7 +10,7 @@ evaluator:
   - "bash"
   - "-c"
   - >-
-    pip install gym numpy;
+    pip install gym numpy matplotlib;
     cd /workspace;
     python eval.py model/agent.py;
 scorer:
