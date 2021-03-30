@@ -11,6 +11,7 @@ evaluator:
   - "-c"
   - >
     pip install gym numpy;
+    cd /workspace;
     python eval.py model/agent.py;
 scorer:
   image: python:3.7
