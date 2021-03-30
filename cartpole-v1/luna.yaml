@@ -9,9 +9,9 @@ evaluator:
   command:
   - "bash"
   - "-c"
-  - |
-    pip install gym numpy
-    python eval.py model/agent.py
+  - >
+    pip install gym numpy;
+    python eval.py model/agent.py;
 scorer:
   image: python:3.7
   command: ["sleep", "1"]
