@@ -9,7 +9,7 @@ evaluator:
   command:
   - "bash"
   - "-c"
-  - >
+  - >-
     pip install gym numpy;
     cd /workspace;
     python eval.py model/agent.py;
