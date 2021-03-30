@@ -7,7 +7,7 @@ import numpy as np
 env = gym.make('CartPole-v1')
 
 # number of evaluations to average rewards
-num_evaluation = 10
+num_evaluation = 100
 
 # create eval output dir
 os.makedirs("eval", exist_ok=True)

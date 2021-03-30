@@ -5,8 +5,17 @@ This environment is to solve [CartPole-v1](https://gym.openai.com/envs/CartPole-
 ## Leaderboard Scoring
   Average reward of 100 consecutive trials.
 
+### Evaluate locally for development
+
+```
+eval.py <path to agent.py>
+eval.py models/baseline/agent.py
+```
+
+Will produce evaluation result under `/eval` directory.
+
 ## Environment
-A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The system is controlled by applying a force of +1 or -1 to the cart. The pendulum starts upright, and the goal is to prevent it from falling over. A reward of +1 is provided for every timestep that the pole remains upright. The episode ends when the pole is more than 15 degrees from vertical, or the cart moves more than 2.4 units from the center.
+A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The system is controlled by applying a force of 0 or 1 to the cart. The pendulum starts upright, and the goal is to prevent it from falling over. A reward of +1 is provided for every timestep that the pole remains upright. The episode ends when the pole is more than 15 degrees from vertical, or the cart moves more than 2.4 units from the center.
 
 [![](https://user-images.githubusercontent.com/1540981/112910447-39967800-90a8-11eb-909e-cb9264a29b62.png)](https://gym.openai.com/videos/2019-10-21--mqt8Qj1mwo/CartPole-v1/original.mp4)
 
