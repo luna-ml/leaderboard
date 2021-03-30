@@ -37,7 +37,7 @@ def plot_reward(values, title=''):
 
     # plt.show()
     plt.draw()
-    f.savefig('eval/rewards.png', dpi=100)
+    f.savefig('eval/plot.png', dpi=100)
 
 def evaluate():
     agent = Agent()
