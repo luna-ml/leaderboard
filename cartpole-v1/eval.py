@@ -54,6 +54,6 @@ if __name__ == "__main__":
     # Any files written into 'eval' directory will be
     # stored as a evaluation result and browse on evaluation tab.
     # Also scorer access these files to create score.
-    with open("eval/result", "w") as out:
-        out.write(f"avg {avg}\n")
+    with open("eval/result.txt", "w") as out:
+        out.write(f"score {avg}\n")
         out.write(f"stdev {stdev}\n")

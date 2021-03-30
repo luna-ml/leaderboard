@@ -15,4 +15,8 @@ evaluator:
     python eval.py model/agent.py;
 scorer:
   image: python:3.7
-  command: ["sleep", "1"]
+  - "bash"
+  - "-c"
+  - >-
+    cd /workspace;
+    cp eval/result.txt score/score.txt;
