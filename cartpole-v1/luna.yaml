@@ -15,6 +15,7 @@ evaluator:
     python eval.py model/agent.py;
 scorer:
   image: python:3.7
+  command:
   - "bash"
   - "-c"
   - >-
