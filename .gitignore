@@ -1,0 +1,7 @@
+**/__pycache__/**
+
+# local eval outputs
+**/eval/**
+
+# local score outputs
+**/score/**
