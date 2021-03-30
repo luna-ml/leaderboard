@@ -21,5 +21,5 @@ scorer:
   - "-c"
   - >-
     cd /workspace;
-    ls -al eval/
+    ls -al eval/;
     cp eval/result.txt score/score.txt;
