@@ -56,6 +56,9 @@ def evaluate():
         action = agent.predict(observation)
         observation, reward, done, info = env.step(action)
 
+        if "VIDEO_RECORD" not in os.environ:
+            env.render()
+
         # update reward
         total_reward += reward
 
