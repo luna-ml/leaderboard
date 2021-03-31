@@ -18,3 +18,5 @@ jobs:
       with:
         version: "v0.9.0"
     - uses: luna-ml/luna-action@main
+      with:
+        version: "cli_bool_param"
