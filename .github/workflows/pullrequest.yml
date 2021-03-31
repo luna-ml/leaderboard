@@ -1,0 +1,16 @@
+name: Validate, Evaluate and Score locally
+
+on:
+  pull_request:
+
+jobs:
+  luna-ml:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout latest code
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.6"
+    - uses: luna-ml/luna-action@main
