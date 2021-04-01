@@ -1,6 +1,6 @@
 # Random Agent
 
-The baseline is random agent.
+The is random agent.
 This agent performs random action 0 and 1.
 
 Each evaluation, gym environment and random agent uses different random seed. So you can re-evaluate and see score changes.
