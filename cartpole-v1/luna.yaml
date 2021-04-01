@@ -1,0 +1,25 @@
+version: v1
+kind: luna-ml/project
+name: "CartPole-v1"
+description: "Balance a pole on a cart"
+media:
+- https://gym.openai.com/videos/2019-10-21--mqt8Qj1mwo/CartPole-v1/original.mp4
+evaluator:
+  image: continuumio/miniconda3:4.9.2
+  command:
+  - "bash"
+  - "-c"
+  - >-
+    cd /workspace;
+    pip install -r requirements.txt;
+    bash ./setup.sh;
+    VIDEO_RECORD=true xvfb-run -s "-screen 0 640x480x24" python eval.py model/agent.py && bash ./concat_video.sh
+scorer:
+  image: python:3.7
+  command:
+  - "bash"
+  - "-c"
+  - >-
+    cd /workspace;
+    ls -al eval/;
+    cp eval/result.txt score/score.txt
