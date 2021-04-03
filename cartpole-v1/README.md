@@ -9,7 +9,9 @@ This environment is to solve [CartPole-v1](https://gym.openai.com/envs/CartPole-
 
 ```
 eval.py <path to agent.py>
-eval.py models/baseline/agent.py
+
+# example
+eval.py models/random/agent.py
 ```
 
 Will produce evaluation result under `/eval` directory.

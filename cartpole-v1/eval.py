@@ -2,9 +2,7 @@ import sys, os
 import importlib
 import gym
 from gym.wrappers import Monitor
-import numpy as np
 import matplotlib.pyplot as plt
-
 
 # create gym env
 if "VIDEO_RECORD" in os.environ:
@@ -79,20 +77,13 @@ if __name__ == "__main__":
         print(f"Episode {episode}. rewards {reward}")
         all_rewards.append(reward)
 
-    # get summary
-    avg = np.mean(all_rewards)
-    stdev = np.std(all_rewards)
-
-    print("------------")
-    print(f"Average reward: {avg}")
-    print(f"Std dev: {stdev}")
 
     # Any files written into 'eval' directory will be
     # stored as a evaluation result and browse on evaluation tab.
     # Also scorer access these files to create score.
     with open("eval/result.txt", "w") as out:
-        out.write(f"score {avg}\n")
-        out.write(f"stdev {stdev}\n")
+        for idx, val in enumerate(all_rewards):
+            out.write(f"episode-{idx} {val}\n")
 
-    # create plot
+    # create plot eval/plot.png
     plot_reward(all_rewards)
