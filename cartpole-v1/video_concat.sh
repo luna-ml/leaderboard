@@ -2,8 +2,8 @@
 
 # download font
 cd video
-wget "https://fonts.google.com/download?family=Roboto" -O roboto.zip
-unzip roboto.zip
+wget -q "https://fonts.google.com/download?family=Roboto" -O roboto.zip
+unzip -q roboto.zip
 cd -
 
 # add episode # on the video
