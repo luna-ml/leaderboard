@@ -83,7 +83,7 @@ if __name__ == "__main__":
     # Also scorer access these files to create score.
     with open("eval/result.txt", "w") as out:
         for idx, val in enumerate(all_rewards):
-            out.write(f"episode-{idx} {val}\n")
+            out.write(f"episode-{idx+1} {val}\n")
 
     # create plot eval/plot.png
     plot_reward(all_rewards)
