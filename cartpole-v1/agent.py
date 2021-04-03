@@ -15,12 +15,3 @@ class Agent():
         # This function should return action 0 or 1 to move cart left or right
         action = 1
         return action
-
-
-    def metrics(self) -> dict:
-        # Metrics to export with evaluation result.
-        # You can return additional informations such as hyper parameters of the model.
-        #
-        # key: str, name of metric
-        # value: float
-        return {}
