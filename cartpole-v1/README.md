@@ -60,4 +60,3 @@ This environment corresponds to the version of the cart-pole problem described b
 
 
 This README file is created from https://gym.openai.com/envs/CartPole-v1/.
-
