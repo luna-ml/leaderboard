@@ -4,7 +4,8 @@ name: "CartPole-v1"
 description: "Balance a pole on a cart"
 media:
 - https://gym.openai.com/videos/2019-10-21--mqt8Qj1mwo/CartPole-v1/original.mp4
-evaluator:
+evaluators:
+- name: gym-0.17.3
   image: continuumio/miniconda3:4.9.2
   command:
   - "bash"
