@@ -63,9 +63,6 @@ def evaluate():
         if done:
             break
 
-        if total_reward < 0:
-            break
-
     return total_reward
 
 if __name__ == "__main__":
