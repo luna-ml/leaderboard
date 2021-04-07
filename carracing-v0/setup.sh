@@ -5,10 +5,10 @@ apt-get update
 apt-get install -y python-opengl xvfb unzip swig
 
 # install gym from source where carracing is not available in pypi released version
-pushd
-cd /tmp/
-git clone https://github.com/openai/gym.git
-cd gym
-git checkout v0.10.5
-pip install -e '.[box2d]'
-popd
+# pushd
+# cd /tmp/
+# git clone https://github.com/openai/gym.git
+# cd gym
+# git checkout v0.10.5
+# pip install -e '.[box2d]'
+# popd
