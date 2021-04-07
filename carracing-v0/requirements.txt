@@ -1,0 +1,2 @@
+gym[box2d]==0.17.3
+matplotlib

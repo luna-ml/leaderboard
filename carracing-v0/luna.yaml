@@ -1,0 +1,26 @@
+version: v1
+kind: luna-ml/project
+name: "CarRacing-v0"
+description: "Race a car around a track."
+media:
+- https://gym.openai.com/videos/2019-10-21--mqt8Qj1mwo/CarRacing-v0/original.mp4
+evaluators:
+- name: run-10
+  image: continuumio/miniconda3:4.9.2
+  command:
+  - "bash"
+  - "-c"
+  - >-
+    cd /workspace;
+    bash ./setup.sh;
+    pip install -r requirements.txt;
+    VIDEO_RECORD=true xvfb-run -s "-screen 0 640x480x24" python eval.py model/agent.py && bash ./video_concat.sh
+scorer:
+  image: python:3.7
+  command:
+  - "bash"
+  - "-c"
+  - >-
+    cd /workspace;
+    pip install numpy;
+    python score.py eval/result.txt score/score.txt
