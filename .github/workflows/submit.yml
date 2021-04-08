@@ -19,3 +19,4 @@ jobs:
       with:
         version: "main"
         server: https://luna.staroid.com
+        access-token: ${{ secrets.MY_GH_ACCESS_TOKEN }}
