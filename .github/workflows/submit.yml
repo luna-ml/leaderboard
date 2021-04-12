@@ -17,6 +17,4 @@ jobs:
         python-version: "3.6"
     - uses: luna-ml/luna-action@main
       with:
-        version: "main"
-        server: https://luna.staroid.com
         access-token: ${{ secrets.MY_GH_ACCESS_TOKEN }}

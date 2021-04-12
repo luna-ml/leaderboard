@@ -1,5 +1,5 @@
 import sys, os
-import importlib
+import importlib, pathlib
 import gym
 from gym.wrappers import Monitor
 import matplotlib.pyplot as plt
@@ -44,7 +44,7 @@ def plot_reward(values, title=''):
     f.savefig('eval/plot.png', dpi=100)
 
 def evaluate():
-    agent = Agent()
+    agent = Agent(path=pathlib.Path(sys.argv[1]).parent)
 
     observation = env.reset()
     done = False

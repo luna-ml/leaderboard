@@ -1,7 +1,7 @@
 import random
 
 class Agent():
-    def __init__(self):
+    def __init__(self, **kwargs):
         random.seed()
 
     def predict(self, state):
