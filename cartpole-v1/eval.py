@@ -1,5 +1,5 @@
 import sys, os
-import importlib
+import importlib, pathlib
 import gym
 from gym.wrappers import Monitor
 import matplotlib.pyplot as plt
@@ -12,7 +12,7 @@ else:
     env = gym.make('CartPole-v1')
 
 # number of evaluations to average rewards
-num_evaluation = 100
+num_evaluation = 2 if os.environ.get("CI") == "true" else 30
 
 # max score in cartpole-v1 env
 max_score = 500
@@ -44,7 +44,7 @@ def plot_reward(values, title=''):
     f.savefig('eval/plot.png', dpi=100)
 
 def evaluate():
-    agent = Agent()
+    agent = Agent(path=pathlib.Path(sys.argv[1]).parent)
 
     observation = env.reset()
     done = False
