@@ -3,7 +3,7 @@
 This environment is to solve [CartPole-v1](https://gym.openai.com/envs/CartPole-v1/) from open AI gym.
 
 ## Leaderboard Scoring
-  Average reward of 100 consecutive trials.
+  Average reward of 30 consecutive trials.
 
 ### Evaluate locally for development
 

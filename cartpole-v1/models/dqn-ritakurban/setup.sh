@@ -1,4 +1,5 @@
 #!/bin/bash
 
+cd model
 bunzip2 pretrained.tar.bz2
-tar -xzf pretrained.tar
+tar -xf pretrained.tar

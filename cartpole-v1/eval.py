@@ -12,7 +12,7 @@ else:
     env = gym.make('CartPole-v1')
 
 # number of evaluations to average rewards
-num_evaluation = 100
+num_evaluation = 2 if os.environ.get("CI") == "true" else 30
 
 # max score in cartpole-v1 env
 max_score = 500
