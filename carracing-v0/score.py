@@ -15,8 +15,8 @@ if __name__ == "__main__":
             all_rewards.append(reward)
 
     # score
-    avg = np.mean(all_rewards)
-    stdev = np.std(all_rewards)
+    avg = np.round(np.mean(all_rewards), 2)
+    stdev = np.round(np.std(all_rewards), 2)
 
     # write score file
     with open(score_file, "w") as out:
