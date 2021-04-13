@@ -12,8 +12,8 @@ evaluators:
   - "-c"
   - >-
     cd /workspace;
-    pip install -r requirements.txt;
     bash ./setup.sh;
+    pip install -r requirements.txt;
     [ -f "model/setup.sh" ] && bash ./model/setup.sh;
     [ -f "model/requirements.txt" ] && pip install -r model/requirements.txt;
     VIDEO_RECORD=true xvfb-run -s "-screen 0 640x480x24" python eval.py model/agent.py && bash ./video_concat.sh
