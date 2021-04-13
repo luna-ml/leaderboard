@@ -12,7 +12,7 @@ else:
     env = gym.make('LunarLanderContinuous-v2')
 
 # number of evaluations to average rewards
-num_evaluation = 2 if os.environ.get("CI") == "true" else 1
+num_evaluation = 2 if os.environ.get("CI") == "true" else 10
 
 # max score in LunarLanderContinuous-v2 env
 max_score = 2000
