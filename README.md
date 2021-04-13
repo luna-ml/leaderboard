@@ -6,7 +6,7 @@ This repository includes [Luna ML](https://github.com/luna-ml/luna) projects and
 | ---------------- | ------------------------ |
 | [carracing-v0](https://github.com/luna-ml/leaderboard/tree/main/carracing-v0) | [Leaderboard](https://luna.staroid.com/project/github.com/luna-ml/leaderboard/carracing-v0/leaderboard) |
 | [cartpole-v1](https://github.com/luna-ml/leaderboard/tree/main/cartpole-v1) | [Leaderboard](https://luna.staroid.com/project/github.com/luna-ml/leaderboard/cartpole-v1/leaderboard) |
-
+| [lunalandercontinuous-v2](https://github.com/luna-ml/leaderboard/tree/main/lunalandercontinuous-v2) | [Leaderboard](https://luna.staroid.com/project/github.com/luna-ml/leaderboard/unalandercontinuous-v2/leaderboard) |
 
 ## Add new challenges
 

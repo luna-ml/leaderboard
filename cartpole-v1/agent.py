@@ -4,7 +4,7 @@
 # and implement predict(state) method to start
 
 class Agent():
-    def __init__(self):
+    def __init__(self, **kwargs):
         # initialize anything you need.
         # e.g. load pre-trained model
         pass
