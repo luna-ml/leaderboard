@@ -22,7 +22,7 @@ class Agent():
         # first_leg_contact = state[6]
         # second_leg_contact = state[7]
 
-        side_engine = 0
         main_engine = 0
+        side_engine = 0
 
-        return [side_engine, main_engine]
+        return [main_engine, side_engine]

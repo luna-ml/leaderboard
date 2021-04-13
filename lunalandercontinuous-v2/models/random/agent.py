@@ -16,7 +16,7 @@ class Agent():
         first_leg_contact = state[6]
         second_leg_contact = state[7]
 
+        main_engine = random.uniform(0, 0.25)
         side_engine = random.uniform(-1, 1)
-        main_engine = random.uniform(0.5, 1)
 
-        return [side_engine, main_engine]
+        return [main_engine, side_engine]
