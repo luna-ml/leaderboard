@@ -5,7 +5,7 @@ description: Classify numbers into Positive and Negative groups
 evaluators:
 - name: first_evaluator
   image: python:3.7
-  command: python eval.py model/model.py
+  command: ["python", "eval.py", "model/model.py"]
 scorer:
   image: python:3.7
   command:
