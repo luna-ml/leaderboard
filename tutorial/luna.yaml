@@ -11,6 +11,14 @@ evaluators:
   - >-
     cd /workspace;
     python eval.py model/model.py
+- name: large_evaluator
+  image: python:3.7
+  command:
+  - "bash"
+  - "-c"
+  - >-
+    cd /workspace;
+    python eval_large.py model/model.py
 scorer:
   image: python:3.7
   command:
