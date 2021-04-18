@@ -9,6 +9,7 @@ evaluators:
   - "bash"
   - "-c"
   - >-
+    cd /workspace;
     python eval.py model/model.py
 scorer:
   image: python:3.7
@@ -16,5 +17,6 @@ scorer:
   - "bash"
   - "-c"
   - >-
+    cd /workspace;
     pip install numpy;
     python score.py
