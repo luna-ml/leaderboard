@@ -41,7 +41,7 @@ accuracy = np.round(np.mean(results), 2)
 avg_latency = np.round(np.mean(latency), 2)
 
 # calautlate score.
-score = accuracy / max(avg_latency, 0.01)
+score = int(accuracy / max(avg_latency, 0.01))
 
 # write score file
 with open(score_file, "w") as out:

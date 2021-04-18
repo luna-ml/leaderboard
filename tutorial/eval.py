@@ -25,7 +25,7 @@ for i in range(num_sample):
     latency = time.time() - start
 
     results.append((n, group, predicted_group, latency))
-
+    print(f"{n}, group={group}, predicted_group={predicted_group}, latency={latency}sec")
 
 # Write an evaluation result data.
 # Evaluation results can be anything from text, image, to video.
