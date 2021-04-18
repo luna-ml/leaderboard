@@ -1,10 +1,10 @@
 # Tutorial
 
-See [Quickstart](https://luna-ml.github.io/luna/quickstart/index.html) for step by step instruction of the this tutorial project.
+See [Quickstart](https://luna-ml.github.io/luna/quickstart/index.html) for step by step instruction of this tutorial project.
 
 ## Objective
 
-This is a tutorial project that evaluates models and classify numbers into positive and negative groups.
+This is a tutorial project that evaluates models and classifies numbers into positive and negative groups.
 
 ## Scoring
 The model not only needs to classify them correctly but also should aim lower latency when performing `predict()`.
